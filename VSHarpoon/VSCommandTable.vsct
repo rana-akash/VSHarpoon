@@ -231,6 +231,16 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab9</LocCanonicalName>
 				</Strings>
 			</Button>
+
+			<Button guid="Harpoon" id="HarpoonToolWindow" priority="0x0125" type="Button">
+				<Parent guid="VSMainMenu" id="View.DevWindowsGroup.OtherWindows.Group1" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonToolWindow</ButtonText>
+					<LocCanonicalName>.View.HarpoonToolWindow</LocCanonicalName>
+				</Strings>
+			</Button>
 		</Buttons>
 	</Commands>
 
@@ -261,6 +271,7 @@
 			<IDSymbol name="SwitchToTab7" value="0x0123" />
 			<IDSymbol name="SwitchToTab8" value="0x0124" />
 			<IDSymbol name="SwitchToTab9" value="0x0125" />
+			<IDSymbol name="HarpoonToolWindow" value="0x0126" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>

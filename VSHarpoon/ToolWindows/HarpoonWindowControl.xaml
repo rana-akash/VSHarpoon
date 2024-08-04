@@ -1,0 +1,110 @@
+﻿<UserControl x:Class="Test1.HarpoonWindowControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:imaging="clr-namespace:Microsoft.VisualStudio.Imaging;assembly=Microsoft.VisualStudio.Imaging"
+             xmlns:theming="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Imaging"
+             xmlns:util="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Utilities"
+             xmlns:catalog="clr-namespace:Microsoft.VisualStudio.Imaging;assembly=Microsoft.VisualStudio.ImageCatalog"
+             xmlns:toolkit="clr-namespace:Community.VisualStudio.Toolkit;assembly=Community.VisualStudio.Toolkit"
+             toolkit:Themes.UseVsTheme="True"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             Name="MyToolWindow">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Margin="0,10,0,270">
+            <Label x:Name="lblHeadline0"
+                   Height="24" Content="Title0" Width="59"/>
+            <Button Content="Click me!"
+                    Click="button0_Click"
+                    Width="81"
+                    Height="26"
+                    x:Name="button0" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,35,0,245">
+            <Label x:Name="lblHeadline1"
+           Height="24" Content="Title1" Width="63"/>
+            <Button Content="Click me!"
+            Click="button1_Click"
+            Width="78"
+            Height="24"
+            x:Name="button1" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,55,0,225">
+            <Label x:Name="lblHeadline2"
+   Height="24" Content="Title2" Width="63"/>
+            <Button Content="Click me!"
+    Click="button2_Click"
+    Width="78"
+    Height="24"
+    x:Name="button2" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,73,0,207">
+            <Label x:Name="lblHeadline3"
+   Height="24" Content="Title3" Width="63"/>
+            <Button Content="Click me!"
+    Click="button3_Click"
+    Width="78"
+    Height="24"
+    x:Name="button3" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,93,0,187">
+            <Label x:Name="lblHeadline4"
+   Height="24" Content="Title4" Width="63"/>
+            <Button Content="Click me!"
+    Click="button4_Click"
+    Width="78"
+    Height="24"
+    x:Name="button4" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,113,0,167">
+            <Label x:Name="lblHeadline5"
+   Height="24" Content="Title5" Width="63"/>
+            <Button Content="Click me!"
+    Click="button5_Click"
+    Width="78"
+    Height="24"
+    x:Name="button5" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,133,0,147">
+            <Label x:Name="lblHeadline6"
+   Height="24" Content="Title6" Width="63"/>
+            <Button Content="Click me!"
+    Click="button6_Click"
+    Width="78"
+    Height="24"
+    x:Name="button6" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,153,0,127">
+            <Label x:Name="lblHeadline7"
+   Height="24" Content="Title7" Width="63"/>
+            <Button Content="Click me!"
+    Click="button7_Click"
+    Width="78"
+    Height="24"
+    x:Name="button7" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,173,0,107">
+            <Label x:Name="lblHeadline8"
+Height="24" Content="Title8" Width="63"/>
+            <Button Content="Click me!"
+ Click="button8_Click"
+ Width="78"
+ Height="24"
+ x:Name="button8" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="0,193,0,87">
+            <Label x:Name="lblHeadline9"
+Height="24" Content="Title9" Width="63"/>
+            <Button Content="Click me!"
+ Click="button9_Click"
+ Width="78"
+ Height="24"
+ x:Name="button9" />
+        </StackPanel>
+
+    </Grid>
+</UserControl>
