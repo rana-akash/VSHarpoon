@@ -7,8 +7,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
-            
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[0]);
         }
     }
     [Command(PackageIds.SwitchToTab1)]
@@ -16,7 +15,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[1]);
 
         }
     }
@@ -25,7 +24,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[2]);
 
         }
     }
@@ -34,7 +33,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[3]);
 
         }
     }
@@ -43,7 +42,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[4]);
 
         }
     }
@@ -52,7 +51,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[5]);
 
         }
     }
@@ -61,7 +60,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[6]);
 
         }
     }
@@ -70,7 +69,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[7]);
 
         }
     }
@@ -79,7 +78,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[8]);
 
         }
     }
@@ -88,7 +87,7 @@ namespace Test1
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[9]);
 
         }
     }
