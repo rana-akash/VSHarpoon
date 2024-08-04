@@ -45,7 +45,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\NextPrevTab.cs" />
+    <Compile Include="Commands\SwitchToTab.cs" />
+    <Compile Include="Commands\OverwriteTab.cs" />
     <Compile Include="Commands\DeleteTab.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\AppendTab.cs" />
     <Compile Include="HarpoonPackage.cs" />

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+	<Include href="KnownImageIds.vsct"/>
+	<Include href="VSGlobals.vsct"/>
+
+	<Commands package="Harpoon">
+		<Groups>
+			<Group guid="Harpoon" id="MyMenuGroup" priority="0x0600">
+				<Parent guid="VSMainMenu" id="Tools"/>
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="Harpoon" id="AppendTab" priority="0x0100" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonAppendTab</ButtonText>
+					<LocCanonicalName>.Harpoon.AppendTab</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="DeleteTab" priority="0x0101" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonDeleteTab</ButtonText>
+					<LocCanonicalName>.Harpoon.DeleteTab</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab0" priority="0x0102" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab0</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab0</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab1" priority="0x0105" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab1</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab1</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab2" priority="0x0106" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab2</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab2</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab3" priority="0x0107" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab3</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab3</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab4" priority="0x0108" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab4</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab4</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab5" priority="0x0109" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab5</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab5</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab6" priority="0x0110" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab6</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab6</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab7" priority="0x0111" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab7</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab7</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab8" priority="0x0112" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab8</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab8</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="OverwriteTab9" priority="0x0113" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonOverwriteTab9</ButtonText>
+					<LocCanonicalName>.Harpoon.OverwriteTab9</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="NextTab" priority="0x0114" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonNextTab</ButtonText>
+					<LocCanonicalName>.Harpoon.NextTab</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="PrevTab" priority="0x0115" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonPrevTab</ButtonText>
+					<LocCanonicalName>.Harpoon.PrevTab</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="SwitchToTab0" priority="0x0116" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab0</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab0</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab1" priority="0x0117" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab1</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab1</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab2" priority="0x0118" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab2</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab2</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab3" priority="0x0119" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab3</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab3</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab4" priority="0x0120" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab4</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab4</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab5" priority="0x0121" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab5</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab5</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab6" priority="0x0122" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab6</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab6</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab7" priority="0x0123" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab7</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab7</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab8" priority="0x0124" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab8</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab8</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="SwitchToTab9" priority="0x0125" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwitchToTab9</ButtonText>
+					<LocCanonicalName>.Harpoon.SwitchToTab9</LocCanonicalName>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="Harpoon" value="{3324b810-3638-4d86-9a10-635e784a75e7}">
+			<IDSymbol name="MyMenuGroup" value="0x0001" />
+			<IDSymbol name="AppendTab" value="0x0100" />
+			<IDSymbol name="DeleteTab" value="0x0101" />
+			<IDSymbol name="OverwriteTab0" value="0x0102" />
+			<IDSymbol name="OverwriteTab1" value="0x0105" />
+			<IDSymbol name="OverwriteTab2" value="0x0106" />
+			<IDSymbol name="OverwriteTab3" value="0x0107" />
+			<IDSymbol name="OverwriteTab4" value="0x0108" />
+			<IDSymbol name="OverwriteTab5" value="0x0109" />
+			<IDSymbol name="OverwriteTab6" value="0x0110" />
+			<IDSymbol name="OverwriteTab7" value="0x0111" />
+			<IDSymbol name="OverwriteTab8" value="0x0112" />
+			<IDSymbol name="OverwriteTab9" value="0x0113" />
+			<IDSymbol name="NextTab" value="0x0114" />
+			<IDSymbol name="PrevTab" value="0x0115" />
+			<IDSymbol name="SwitchToTab0" value="0x0116" />
+			<IDSymbol name="SwitchToTab1" value="0x0117" />
+			<IDSymbol name="SwitchToTab2" value="0x0118" />
+			<IDSymbol name="SwitchToTab3" value="0x0119" />
+			<IDSymbol name="SwitchToTab4" value="0x0120" />
+			<IDSymbol name="SwitchToTab5" value="0x0121" />
+			<IDSymbol name="SwitchToTab6" value="0x0122" />
+			<IDSymbol name="SwitchToTab7" value="0x0123" />
+			<IDSymbol name="SwitchToTab8" value="0x0124" />
+			<IDSymbol name="SwitchToTab9" value="0x0125" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace Harpoon
+namespace Test1
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration(Vsix.Name, Vsix.Description, Vsix.Version)]
@@ -14,9 +14,8 @@ namespace Harpoon
     [Guid(PackageGuids.HarpoonString)]
     public sealed class HarpoonPackage : ToolkitPackage
     {
-        public static Dictionary<int, string> indexTabNamesMap = new();
-        public static Dictionary<string, int> tabNamesIndexMap = new();
-        public static int appendIndex = 1;
+        public static string[] fileNamesArr = new string[10];
+        public static Dictionary<string, int> fileNameIndexMap = new();
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
             await this.RegisterCommandsAsync();
