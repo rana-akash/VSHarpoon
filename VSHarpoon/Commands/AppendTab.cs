@@ -16,6 +16,7 @@ namespace Test1
                     {
                         HarpoonPackage.fileNamesArr[i] = activeDoc.FilePath;
                         HarpoonPackage.fileNameIndexMap.Add(activeDoc.FilePath, i);
+                        Helper.UpdateLabel(i, activeDoc.FilePath);
                         break;
                     }
                 }

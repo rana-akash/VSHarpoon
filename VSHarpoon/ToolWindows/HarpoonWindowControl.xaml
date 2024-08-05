@@ -13,97 +13,50 @@
              d:DesignHeight="300"
              d:DesignWidth="300"
              Name="MyToolWindow">
-    <Grid>
+    <Grid RenderTransformOrigin="0.497,0.497">
         <StackPanel Orientation="Horizontal" Margin="0,10,0,270">
-            <Label x:Name="lblHeadline0"
-                   Height="24" Content="Title0" Width="59"/>
-            <Button Content="Click me!"
-                    Click="button0_Click"
-                    Width="81"
-                    Height="26"
-                    x:Name="button0" />
+            <Label x:Name="lblHeadline0" MouseDoubleClick="lblHeadline0_MouseDoubleClick"
+                   Height="25" Width="289"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,35,0,245">
-            <Label x:Name="lblHeadline1"
-           Height="24" Content="Title1" Width="63"/>
-            <Button Content="Click me!"
-            Click="button1_Click"
-            Width="78"
-            Height="24"
-            x:Name="button1" />
+            <Label x:Name="lblHeadline1" MouseDoubleClick="lblHeadline1_MouseDoubleClick"
+           Height="24" Width="289"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,55,0,225">
-            <Label x:Name="lblHeadline2"
-   Height="24" Content="Title2" Width="63"/>
-            <Button Content="Click me!"
-    Click="button2_Click"
-    Width="78"
-    Height="24"
-    x:Name="button2" />
+            <Label x:Name="lblHeadline2" MouseDoubleClick="lblHeadline2_MouseDoubleClick"
+   Height="24" Width="288"/>
+
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,73,0,207">
-            <Label x:Name="lblHeadline3"
-   Height="24" Content="Title3" Width="63"/>
-            <Button Content="Click me!"
-    Click="button3_Click"
-    Width="78"
-    Height="24"
-    x:Name="button3" />
+            <Label x:Name="lblHeadline3" MouseDoubleClick="lblHeadline3_MouseDoubleClick"
+   Height="24" Width="289"/>
+
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,93,0,187">
-            <Label x:Name="lblHeadline4"
-   Height="24" Content="Title4" Width="63"/>
-            <Button Content="Click me!"
-    Click="button4_Click"
-    Width="78"
-    Height="24"
-    x:Name="button4" />
+            <Label x:Name="lblHeadline4" MouseDoubleClick="lblHeadline4_MouseDoubleClick"
+   Height="24" Width="289"/>
+
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,113,0,167">
-            <Label x:Name="lblHeadline5"
-   Height="24" Content="Title5" Width="63"/>
-            <Button Content="Click me!"
-    Click="button5_Click"
-    Width="78"
-    Height="24"
-    x:Name="button5" />
+            <Label x:Name="lblHeadline5" MouseDoubleClick="lblHeadline5_MouseDoubleClick"
+   Height="24" Width="288"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,133,0,147">
-            <Label x:Name="lblHeadline6"
-   Height="24" Content="Title6" Width="63"/>
-            <Button Content="Click me!"
-    Click="button6_Click"
-    Width="78"
-    Height="24"
-    x:Name="button6" />
+            <Label x:Name="lblHeadline6" MouseDoubleClick="lblHeadline6_MouseDoubleClick"
+   Height="24" Width="288"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,153,0,127">
-            <Label x:Name="lblHeadline7"
-   Height="24" Content="Title7" Width="63"/>
-            <Button Content="Click me!"
-    Click="button7_Click"
-    Width="78"
-    Height="24"
-    x:Name="button7" />
+            <Label x:Name="lblHeadline7" MouseDoubleClick="lblHeadline7_MouseDoubleClick"
+   Height="27" Width="288"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="0,173,0,107">
-            <Label x:Name="lblHeadline8"
-Height="24" Content="Title8" Width="63"/>
-            <Button Content="Click me!"
- Click="button8_Click"
- Width="78"
- Height="24"
- x:Name="button8" />
+            <Label x:Name="lblHeadline8" MouseDoubleClick="lblHeadline8_MouseDoubleClick"
+Height="24" Width="290" RenderTransformOrigin="0.504,0.456"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="0,193,0,87">
-            <Label x:Name="lblHeadline9"
-Height="24" Content="Title9" Width="63"/>
-            <Button Content="Click me!"
- Click="button9_Click"
- Width="78"
- Height="24"
- x:Name="button9" />
+            <Label x:Name="lblHeadline9" MouseDoubleClick="lblHeadline9_MouseDoubleClick"
+Height="24" Width="293"/>
         </StackPanel>
 
     </Grid>

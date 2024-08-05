@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Controls;
+
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +10,16 @@ namespace Test1
 {
     public static class Helper
     {
+        public static Label Label0 { get; set; }
+        public static Label Label1 { get; set; }
+        public static Label Label2 { get; set; }
+        public static Label Label3 { get; set; }
+        public static Label Label4 { get; set; }
+        public static Label Label5 { get; set; }
+        public static Label Label6 { get; set; }
+        public static Label Label7 { get; set; }
+        public static Label Label8 { get; set; }
+        public static Label Label9 { get; set; }
         public static void OverWriteAtIndex(string filePath, int index)
         {
             if (HarpoonPackage.fileNamesArr[index] == null)
@@ -36,6 +48,43 @@ namespace Test1
             }
         }
 
+        public static void UpdateLabel(int index, string filePath)
+        {
+            var arr = filePath.Split('\\');
+            string fileName =  $"{index}  :  {arr[arr.Length - 1]}";
+            switch (index)
+            {
+                case 0:
+                    Label0.Content = fileName;
+                    break;
+                case 1: Label1.Content = fileName;
+                    break;
+                case 2:
+                    Label2.Content = fileName;
+                    break;
+                case 3: Label3.Content = fileName;
+                    break;
+                case 4:
+                    Label4.Content = fileName;
+                    break;
+                case 5:
+                    Label5.Content = fileName;
+                    break;
+                case 6:
+                    Label6.Content = fileName;
+                    break;
+                case 7:
+                    Label7.Content = fileName;
+                    break;
+                case 8:
+                    Label8.Content = fileName;
+                    break;
+                case 9:
+                    Label9.Content = fileName;
+                    break;
+                default: break;
+            }
 
+        }
     }
 }
