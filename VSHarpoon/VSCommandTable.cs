@@ -46,5 +46,7 @@ namespace Test1
         public const int SwitchToTab8 = 0x0124;
         public const int SwitchToTab9 = 0x0125;
         public const int HarpoonToolWindow = 0x0126;
+        public const int SwapLeft = 0x0127;
+        public const int SwapRight = 0x0128;
     }
 }

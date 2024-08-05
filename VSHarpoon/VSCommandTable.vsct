@@ -241,6 +241,26 @@
 					<LocCanonicalName>.View.HarpoonToolWindow</LocCanonicalName>
 				</Strings>
 			</Button>
+
+			<Button guid="Harpoon" id="SwapLeft" priority="0x0127" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwapLeft</ButtonText>
+					<LocCanonicalName>.Harpoon.SwapLeft</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="SwapRight" priority="0x0128" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSwapRight</ButtonText>
+					<LocCanonicalName>.Harpoon.SwapRight</LocCanonicalName>
+				</Strings>
+			</Button>
 		</Buttons>
 	</Commands>
 
@@ -272,6 +292,8 @@
 			<IDSymbol name="SwitchToTab8" value="0x0124" />
 			<IDSymbol name="SwitchToTab9" value="0x0125" />
 			<IDSymbol name="HarpoonToolWindow" value="0x0126" />
+			<IDSymbol name="SwapLeft" value="0x0127" />
+			<IDSymbol name="SwapRight" value="0x0128" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>

@@ -45,6 +45,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\SwapLeftRight.cs" />
     <Compile Include="Commands\HarpoonWindowCommand.cs" />
     <Compile Include="Commands\NextPrevTab.cs" />
     <Compile Include="Commands\SwitchToTab.cs" />
