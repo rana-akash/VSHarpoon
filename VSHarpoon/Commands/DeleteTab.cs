@@ -11,6 +11,7 @@ namespace Test1
             if (HarpoonPackage.fileNameIndexMap.ContainsKey(activeDoc.FilePath))
             {
                 HarpoonPackage.fileNamesArr[HarpoonPackage.fileNameIndexMap[activeDoc.FilePath]] = null;
+                Helper.UpdateLabel(HarpoonPackage.fileNameIndexMap[activeDoc.FilePath], null);
                 HarpoonPackage.fileNameIndexMap.Remove(activeDoc.FilePath);
             }
         }

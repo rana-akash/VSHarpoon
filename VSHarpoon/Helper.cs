@@ -20,6 +20,21 @@ namespace Test1
         public static Label Label7 { get; set; }
         public static Label Label8 { get; set; }
         public static Label Label9 { get; set; }
+
+        public static void SetLabelInitValue()
+        {
+            Label0.Content = "0  :  ";
+            Label1.Content = "1  :  ";
+            Label2.Content = "2  :  ";
+            Label3.Content = "3  :  ";
+            Label4.Content = "4  :  ";
+            Label5.Content = "5  :  ";
+            Label6.Content = "6  :  ";
+            Label7.Content = "7  :  ";
+            Label8.Content = "8  :  ";
+            Label9.Content = "9  :  ";
+        }
+
         public static void OverWriteAtIndex(string filePath, int index)
         {
             if (HarpoonPackage.fileNamesArr[index] == null)
@@ -27,8 +42,10 @@ namespace Test1
                 if (HarpoonPackage.fileNameIndexMap.ContainsKey(filePath))
                 {
                     HarpoonPackage.fileNamesArr[HarpoonPackage.fileNameIndexMap[filePath]] = null; //prev reference
+                    UpdateLabel(HarpoonPackage.fileNameIndexMap[filePath], null);
                 }
                 HarpoonPackage.fileNamesArr[index] = filePath;
+                UpdateLabel(index, filePath);
                 HarpoonPackage.fileNameIndexMap[filePath] = index;
             }
             else if (HarpoonPackage.fileNamesArr[index] == filePath)
@@ -40,18 +57,26 @@ namespace Test1
                 //old
                 string oldFileName = HarpoonPackage.fileNamesArr[index];
                 HarpoonPackage.fileNamesArr[index] = null;
+                UpdateLabel(index, null);
                 HarpoonPackage.fileNameIndexMap.Remove(oldFileName);
 
                 //new
                 HarpoonPackage.fileNamesArr[index] = filePath;
+                UpdateLabel(index, filePath);
                 HarpoonPackage.fileNameIndexMap[filePath] = index;
             }
         }
 
         public static void UpdateLabel(int index, string filePath)
         {
-            var arr = filePath.Split('\\');
-            string fileName =  $"{index}  :  {arr[arr.Length - 1]}";
+            string[] arr;
+            string fileName = string.Empty;
+            if (filePath != null)
+            {
+                arr = filePath.Split('\\');
+                fileName =  $"{arr[arr.Length - 1]}";
+            }
+            fileName = index + "  :  " + fileName;
             switch (index)
             {
                 case 0:

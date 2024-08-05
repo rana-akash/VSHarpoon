@@ -19,19 +19,7 @@ namespace Test1
             Helper.Label7 = lblHeadline7;
             Helper.Label8 = lblHeadline8;
             Helper.Label9 = lblHeadline9;
-        }
-
-        public void setText0(string filePath)
-        {
-            lblHeadline0.Content = " 0    " + filePath;
-        }
-        public void setText1(string filePath)
-        {
-            lblHeadline1.Content = " 1    " + filePath;
-        }
-        public void setText2(string filePath)
-        {
-            lblHeadline2.Content = " 2    " + filePath;
+            Helper.SetLabelInitValue();
         }
 
         private async void lblHeadline0_MouseDoubleClick(object sender, MouseButtonEventArgs e)
