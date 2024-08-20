@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\ClearAll.cs" />
+    <Compile Include="Commands\GotoFirst.cs" />
+    <Compile Include="Commands\GotoLast.cs" />
     <Compile Include="Commands\SwapLeftRight.cs" />
     <Compile Include="Commands\HarpoonWindowCommand.cs" />
     <Compile Include="Commands\NextPrevTab.cs" />

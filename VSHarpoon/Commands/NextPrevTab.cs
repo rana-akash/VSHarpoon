@@ -11,10 +11,10 @@ namespace Test1
             int index = -1;
             if (HarpoonPackage.fileNameIndexMap.ContainsKey(activeDoc.FilePath))
             {
-                index = HarpoonPackage.fileNameIndexMap[activeDoc.FilePath]+1;
+                index = HarpoonPackage.fileNameIndexMap[activeDoc.FilePath] + 1;
             }
 
-            if (index >=0 && index < HarpoonPackage.fileNamesArr.Length)
+            if (index >= 0 && index < HarpoonPackage.fileNamesArr.Length)
             {
                 for (int i = index; i < HarpoonPackage.fileNamesArr.Length; i++)
                 {

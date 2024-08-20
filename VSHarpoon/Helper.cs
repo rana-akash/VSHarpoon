@@ -35,6 +35,20 @@ namespace Test1
             Label9.Content = "9  :  ";
         }
 
+        public static void ClearAllLabels()
+        {
+            Label0.Content = string.Empty;
+            Label1.Content = string.Empty;
+            Label2.Content = string.Empty;
+            Label3.Content = string.Empty;
+            Label4.Content = string.Empty;
+            Label5.Content = string.Empty;
+            Label6.Content = string.Empty;
+            Label7.Content = string.Empty;
+            Label8.Content = string.Empty;
+            Label9.Content = string.Empty;
+        }
+
         public static void OverWriteAtIndex(string filePath, int index)
         {
             if (HarpoonPackage.fileNamesArr[index] == null)

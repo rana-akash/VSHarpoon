@@ -48,5 +48,8 @@ namespace Test1
         public const int HarpoonToolWindow = 0x0126;
         public const int SwapLeft = 0x0127;
         public const int SwapRight = 0x0128;
+        public const int ClearAll = 0x0129;
+        public const int GotoFirst = 0x0130;
+        public const int GotoLast = 0x0131;
     }
 }

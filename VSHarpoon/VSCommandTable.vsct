@@ -261,6 +261,34 @@
 					<LocCanonicalName>.Harpoon.SwapRight</LocCanonicalName>
 				</Strings>
 			</Button>
+
+			<Button guid="Harpoon" id="ClearAll" priority="0x0129" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonClearAll</ButtonText>
+					<LocCanonicalName>.Harpoon.ClearAll</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="GotoFirst" priority="0x0130" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonGotoFirst</ButtonText>
+					<LocCanonicalName>.Harpoon.GotoFirst</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="Harpoon" id="GotoLast" priority="0x0131" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonGotoLast</ButtonText>
+					<LocCanonicalName>.Harpoon.GotoLast</LocCanonicalName>
+				</Strings>
+			</Button>
 		</Buttons>
 	</Commands>
 
@@ -294,6 +322,9 @@
 			<IDSymbol name="HarpoonToolWindow" value="0x0126" />
 			<IDSymbol name="SwapLeft" value="0x0127" />
 			<IDSymbol name="SwapRight" value="0x0128" />
+			<IDSymbol name="ClearAll" value="0x0129" />
+			<IDSymbol name="GotoFirst" value="0x0130" />
+			<IDSymbol name="GotoLast" value="0x0131" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>
