@@ -10,9 +10,20 @@ namespace Test1
             var activeDoc = await VS.Documents.GetActiveDocumentViewAsync();
             if (HarpoonPackage.fileNameIndexMap.ContainsKey(activeDoc.FilePath))
             {
-                HarpoonPackage.fileNamesArr[HarpoonPackage.fileNameIndexMap[activeDoc.FilePath]] = null;
-                Helper.UpdateLabel(HarpoonPackage.fileNameIndexMap[activeDoc.FilePath], null);
+                int index = HarpoonPackage.fileNameIndexMap[activeDoc.FilePath];
+
+                HarpoonPackage.fileNamesArr[index] = null;
+                Helper.UpdateLabel(index, null);
                 HarpoonPackage.fileNameIndexMap.Remove(activeDoc.FilePath);
+
+                for (int i = index - 1 ; i >= 0; i--)
+                {
+                    if (HarpoonPackage.fileNamesArr[i] != null)
+                    {
+                        await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[i]);
+                        break;
+                    }
+                }
             }
         }
     }
