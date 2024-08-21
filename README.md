@@ -55,9 +55,20 @@ This extension provides below commands :
 
 **Harpoon.SwapRight**  : swaps current tab with tab on right
 
+
+**Harpoon.ClearAll**  : clears all tracked items
+
+
+**Harpoon.GotoFirst**  : Jumps to first tracked index
+
+**Harpoon.GotoLast**  : Jumps to last tracked index
+
+**Harpoon.SaveSession**  : saves tracked items in a new file called .harpoon_sessions at the level of solution file. 
+
+**Harpoon.ScoochIndexes**  : Recovers empty indexes
+
 **Harpoon.HarpoonToolWindow**  : window showing index to tab assignment
 
 There is a tool window which shows what tab is assigned to which index
 **Harpoon.HarpoonToolWindow** : window showing index to tab assignment
 
-TODO : Save tabs per solution and autoload on start.
