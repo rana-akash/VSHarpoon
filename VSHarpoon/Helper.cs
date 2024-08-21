@@ -37,8 +37,9 @@ namespace Test1
             Label9.Content = "9  :  ";
         }
 
-        public static void SetLabelsOnLoad()
+        public static void ReloadLabels()
         {
+            ClearAllLabels();
             for (int i = 0; i < HarpoonPackage.fileNamesArr.Length; i++)
             {
                 if (HarpoonPackage.fileNamesArr[i] != null)
@@ -83,7 +84,11 @@ namespace Test1
             }
             else // some other file path exists
             {
-                int newFilePathOldIndex = HarpoonPackage.fileNameIndexMap[filePath];
+                int newFilePathOldIndex = -1;
+                if (HarpoonPackage.fileNameIndexMap.ContainsKey(filePath))
+                {
+                    newFilePathOldIndex = HarpoonPackage.fileNameIndexMap[filePath];
+                }
 
                 //old
                 string oldFileName = HarpoonPackage.fileNamesArr[index];
@@ -91,8 +96,11 @@ namespace Test1
                 UpdateLabel(index, null);
                 HarpoonPackage.fileNameIndexMap.Remove(oldFileName);
                 // remove new's old ref
-                HarpoonPackage.fileNamesArr[newFilePathOldIndex] = null;
-                UpdateLabel(newFilePathOldIndex, null);
+                if(newFilePathOldIndex != -1)
+                {
+                    HarpoonPackage.fileNamesArr[newFilePathOldIndex] = null;
+                    UpdateLabel(newFilePathOldIndex, null);
+                }
 
                 //new
                 HarpoonPackage.fileNamesArr[index] = filePath;

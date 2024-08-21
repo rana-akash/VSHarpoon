@@ -299,6 +299,16 @@
 					<LocCanonicalName>.Harpoon.SaveSession</LocCanonicalName>
 				</Strings>
 			</Button>
+
+			<Button guid="Harpoon" id="ScoochIndexes" priority="0x0132" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonScoochIndexes</ButtonText>
+					<LocCanonicalName>.Harpoon.ScoochIndexes</LocCanonicalName>
+				</Strings>
+			</Button>
 		</Buttons>
 	</Commands>
 
@@ -336,6 +346,7 @@
 			<IDSymbol name="GotoFirst" value="0x0130" />
 			<IDSymbol name="GotoLast" value="0x0131" />
 			<IDSymbol name="SaveSession" value="0x0132" />
+			<IDSymbol name="ScoochIndexes" value="0x0133" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>

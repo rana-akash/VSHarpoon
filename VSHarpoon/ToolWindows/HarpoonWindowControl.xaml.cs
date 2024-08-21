@@ -22,7 +22,7 @@ namespace Test1
             Helper.Label8 = lblHeadline8;
             Helper.Label9 = lblHeadline9;
             Helper.SetLabelInitValue();
-            Helper.SetLabelsOnLoad();
+            Helper.ReloadLabels();
             VS.Events.ProjectItemsEvents.AfterRenameProjectItems += HandleRenameOfDocuments;
             VS.Events.ProjectItemsEvents.AfterRemoveProjectItems += HandleRemoveOfDocuments;
             VS.Events.WindowEvents.ActiveFrameChanged += HandleActiveFrameChanged;
