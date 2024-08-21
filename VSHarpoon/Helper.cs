@@ -36,6 +36,17 @@ namespace Test1
             Label9.Content = "9  :  ";
         }
 
+        public static void SetLabelsOnLoad()
+        {
+            for (int i = 0; i < HarpoonPackage.fileNamesArr.Length; i++)
+            {
+                if (HarpoonPackage.fileNamesArr[i] != null)
+                {
+                    UpdateLabel(i, HarpoonPackage.fileNamesArr[i]);
+                }
+            }
+        }
+
         public static void ClearAllLabels()
         {
             Label0.Content = string.Empty;
@@ -167,5 +178,7 @@ namespace Test1
             }
 
         }
+
+        
     }
 }
