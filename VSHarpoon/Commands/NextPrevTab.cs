@@ -27,6 +27,19 @@ namespace Test1
                     }
                 }
             }
+
+            if (index == -1) // if user is on untracked tab, still the command should bring user to the first tracked index
+            {
+                for (int i = 0; i < HarpoonPackage.fileNamesArr.Length; i++)
+                {
+                    if (HarpoonPackage.fileNamesArr[i] != null)
+                    {
+                        await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[i]);
+                        Helper.UpdateLabel(i, HarpoonPackage.fileNamesArr[i]);
+                        break;
+                    }
+                }
+            }
         }
     }
     [Command(PackageIds.PrevTab)]
@@ -46,6 +59,19 @@ namespace Test1
                 for (int i = index; i >= 0; i--)
                 {
                     if (HarpoonPackage.fileNamesArr[i] != null)
+                    {
+                        await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[i]);
+                        Helper.UpdateLabel(i, HarpoonPackage.fileNamesArr[i]);
+                        break;
+                    }
+                }
+            }
+
+            if(index == -1) // if user is on untracked tab, still the command should bring user to the first tracked index
+            {
+                for (int i = 0; i < HarpoonPackage.fileNamesArr.Length; i++)
+                {
+                    if(HarpoonPackage.fileNamesArr [i] != null)
                     {
                         await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[i]);
                         Helper.UpdateLabel(i, HarpoonPackage.fileNamesArr[i]);

@@ -6,6 +6,7 @@ using System.Windows.Controls;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.IO;
 
 namespace Test1
 {
@@ -99,6 +100,17 @@ namespace Test1
                 HarpoonPackage.fileNameIndexMap[filePath] = index;
 
             }
+        }
+
+        public static DirectoryInfo TryGetSolutionDirectoryInfo(string currentPath = null)
+        {
+            var directory = new DirectoryInfo(
+                currentPath ?? Directory.GetCurrentDirectory());
+            while (directory != null && !directory.GetFiles("*.sln").Any())
+            {
+                directory = directory.Parent;
+            }
+            return directory;
         }
 
         public static void clearBoldOffLabels()

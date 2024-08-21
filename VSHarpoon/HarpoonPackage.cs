@@ -19,7 +19,7 @@ namespace Test1
     {
         public static string[] fileNamesArr = new string[10];
         public static Dictionary<string, int> fileNameIndexMap = new();
-        public static string sessionPath = $"{Directory.GetCurrentDirectory()}\\..\\..\\.harpoon_session";
+        public static string sessionPath = $"{Helper.TryGetSolutionDirectoryInfo()}\\.harpoon_session";
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
             LoadSession();
