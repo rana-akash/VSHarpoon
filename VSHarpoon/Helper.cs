@@ -82,16 +82,22 @@ namespace Test1
             }
             else // some other file path exists
             {
+                int newFilePathOldIndex = HarpoonPackage.fileNameIndexMap[filePath];
+
                 //old
                 string oldFileName = HarpoonPackage.fileNamesArr[index];
                 HarpoonPackage.fileNamesArr[index] = null;
                 UpdateLabel(index, null);
                 HarpoonPackage.fileNameIndexMap.Remove(oldFileName);
+                // remove new's old ref
+                HarpoonPackage.fileNamesArr[newFilePathOldIndex] = null;
+                UpdateLabel(newFilePathOldIndex, null);
 
                 //new
                 HarpoonPackage.fileNamesArr[index] = filePath;
                 UpdateLabel(index, filePath);
                 HarpoonPackage.fileNameIndexMap[filePath] = index;
+
             }
         }
 
