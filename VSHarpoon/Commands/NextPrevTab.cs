@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.ExceptionServices;
 
 namespace Test1
 {
@@ -21,6 +22,7 @@ namespace Test1
                     if (HarpoonPackage.fileNamesArr[i] != null)
                     {
                         await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[i]);
+                        Helper.UpdateLabel(i, HarpoonPackage.fileNamesArr[i]);
                         break;
                     }
                 }
@@ -46,6 +48,7 @@ namespace Test1
                     if (HarpoonPackage.fileNamesArr[i] != null)
                     {
                         await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[i]);
+                        Helper.UpdateLabel(i, HarpoonPackage.fileNamesArr[i]);
                         break;
                     }
                 }

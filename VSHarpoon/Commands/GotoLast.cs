@@ -10,6 +10,7 @@
                 if (!string.IsNullOrEmpty(HarpoonPackage.fileNamesArr[i]))
                 {
                     await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[i]);
+                    Helper.UpdateLabel(i, HarpoonPackage.fileNamesArr[i]);
                     break;
                 }
             }

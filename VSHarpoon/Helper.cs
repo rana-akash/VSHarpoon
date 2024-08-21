@@ -5,6 +5,7 @@ using System.Windows.Controls;
 
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Test1
 {
@@ -47,6 +48,8 @@ namespace Test1
             Label7.Content = string.Empty;
             Label8.Content = string.Empty;
             Label9.Content = string.Empty;
+
+            clearBoldOffLabels();
         }
 
         public static void OverWriteAtIndex(string filePath, int index)
@@ -81,6 +84,20 @@ namespace Test1
             }
         }
 
+        public static void clearBoldOffLabels()
+        {
+            Label0.FontWeight = FontWeights.Normal;
+            Label1.FontWeight = FontWeights.Normal;
+            Label2.FontWeight = FontWeights.Normal;
+            Label3.FontWeight = FontWeights.Normal;
+            Label4.FontWeight = FontWeights.Normal;
+            Label5.FontWeight = FontWeights.Normal;
+            Label6.FontWeight = FontWeights.Normal;
+            Label7.FontWeight = FontWeights.Normal;
+            Label8.FontWeight = FontWeights.Normal;
+            Label9.FontWeight = FontWeights.Normal;
+        }
+
         public static void UpdateLabel(int index, string filePath)
         {
             string[] arr;
@@ -88,40 +105,65 @@ namespace Test1
             if (filePath != null)
             {
                 arr = filePath.Split('\\');
-                fileName =  $"{arr[arr.Length - 1]}";
+                fileName = $"{arr[arr.Length - 1]}";
             }
             fileName = index + "  :  " + fileName;
+            clearBoldOffLabels();
             switch (index)
             {
                 case 0:
                     Label0.Content = fileName;
+                    if (fileName != null)
+                        Label0.FontWeight = FontWeights.Bold;
                     break;
-                case 1: Label1.Content = fileName;
+                case 1:
+                    Label1.Content = fileName;
+                    if (fileName != null)
+                        Label1.FontWeight = FontWeights.Bold;
                     break;
                 case 2:
                     Label2.Content = fileName;
+                    if (fileName != null)
+                        Label2.FontWeight = FontWeights.Bold;
                     break;
-                case 3: Label3.Content = fileName;
+                case 3:
+                    Label3.Content = fileName;
+                    if (fileName != null)
+                        Label3.FontWeight = FontWeights.Bold;
                     break;
                 case 4:
                     Label4.Content = fileName;
+                    if (fileName != null)
+                        Label4.FontWeight = FontWeights.Bold;
                     break;
                 case 5:
                     Label5.Content = fileName;
+                    if (fileName != null)
+                        Label5.FontWeight = FontWeights.Bold;
                     break;
                 case 6:
                     Label6.Content = fileName;
+                    if (fileName != null)
+                        Label6.FontWeight = FontWeights.Bold;
                     break;
                 case 7:
                     Label7.Content = fileName;
+                    if (fileName != null)
+                        Label7.FontWeight = FontWeights.Bold;
                     break;
                 case 8:
                     Label8.Content = fileName;
+                    if (fileName != null)
+                        Label8.FontWeight = FontWeights.Bold;
                     break;
                 case 9:
                     Label9.Content = fileName;
+                    if (fileName != null)
+                        Label9.FontWeight = FontWeights.Bold;
                     break;
                 default: break;
+
+
             }
 
         }

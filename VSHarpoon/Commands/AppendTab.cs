@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+using System.Windows.Markup;
 
 namespace Test1
 {
@@ -22,5 +26,20 @@ namespace Test1
                 }
             }
         }
+    }
+
+    [Command(PackageIds.SaveSession)]
+    public sealed class SaveSession : BaseCommand<SaveSession>
+    {
+        protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
+        {
+            File.WriteAllText(HarpoonPackage.sessionPath, JsonConvert.SerializeObject(new HarpoonSession() { fileNameIndexMap = HarpoonPackage.fileNameIndexMap, fileNamesArr = HarpoonPackage.fileNamesArr }));
+        }
+    }
+
+    public class HarpoonSession
+    {
+        public string[] fileNamesArr { get; set; }
+        public Dictionary<string, int> fileNameIndexMap { get; set; }
     }
 }

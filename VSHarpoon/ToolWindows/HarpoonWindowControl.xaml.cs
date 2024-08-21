@@ -24,7 +24,36 @@ namespace Test1
             Helper.SetLabelInitValue();
             VS.Events.ProjectItemsEvents.AfterRenameProjectItems += HandleRenameOfDocuments;
             VS.Events.ProjectItemsEvents.AfterRemoveProjectItems += HandleRemoveOfDocuments;
+            VS.Events.WindowEvents.ActiveFrameChanged += HandleActiveFrameChanged;
         }
+
+        private void HandleActiveFrameChanged(ActiveFrameChangeEventArgs args)
+        {
+            bool matched = false;
+            for (int i = 0; i < HarpoonPackage.fileNamesArr.Length; i++)
+            {
+                if (HarpoonPackage.fileNamesArr[i] != null && HarpoonPackage.fileNamesArr[i].Contains(args.NewFrame.Caption))
+                {
+                    Helper.UpdateLabel(i, HarpoonPackage.fileNamesArr[i]);
+                    matched = true;
+                    break;
+                }
+            }
+            if (!matched)
+            {
+                Helper.clearBoldOffLabels();
+            }
+        }
+
+        //private void HandleBeforeDocumentWindowShow(string obj)
+        //{
+        //    if (obj != null && HarpoonPackage.fileNameIndexMap.ContainsKey(obj))
+        //    {
+        //        Helper.UpdateLabel(HarpoonPackage.fileNameIndexMap[obj], obj);
+        //    }
+        //    Debug.WriteLine(obj);
+        //}
+
         public void HandleRemoveOfDocuments(AfterRemoveProjectItemEventArgs args)
         {
             foreach (ProjectItemRemoveDetails document in args.ProjectItemRemoves)
@@ -62,51 +91,52 @@ namespace Test1
         private async void lblHeadline0_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[0]);
+            Helper.UpdateLabel(0, HarpoonPackage.fileNamesArr[0]);
 
         }
         private async void lblHeadline1_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[1]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[1]); Helper.UpdateLabel(1, HarpoonPackage.fileNamesArr[1]);
         }
 
         private async void lblHeadline2_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[2]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[2]); Helper.UpdateLabel(2, HarpoonPackage.fileNamesArr[2]);
 
         }
         private async void lblHeadline3_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[3]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[3]); Helper.UpdateLabel(3, HarpoonPackage.fileNamesArr[3]);
 
         }
         private async void lblHeadline4_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[4]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[4]); Helper.UpdateLabel(4, HarpoonPackage.fileNamesArr[4]);
 
         }
         private async void lblHeadline5_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[5]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[5]); Helper.UpdateLabel(5, HarpoonPackage.fileNamesArr[5]);
 
         }
         private async void lblHeadline6_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[6]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[6]); Helper.UpdateLabel(6, HarpoonPackage.fileNamesArr[6]);
 
         }
         private async void lblHeadline7_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[7]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[7]); Helper.UpdateLabel(7, HarpoonPackage.fileNamesArr[7]);
 
         }
         private async void lblHeadline8_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[8]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[8]); Helper.UpdateLabel(8, HarpoonPackage.fileNamesArr[8]);
 
         }
         private async void lblHeadline9_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[9]);
+            await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[9]); Helper.UpdateLabel(9, HarpoonPackage.fileNamesArr[9]);
 
         }
 

@@ -289,6 +289,16 @@
 					<LocCanonicalName>.Harpoon.GotoLast</LocCanonicalName>
 				</Strings>
 			</Button>
+
+			<Button guid="Harpoon" id="SaveSession" priority="0x0132" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSaveSession</ButtonText>
+					<LocCanonicalName>.Harpoon.SaveSession</LocCanonicalName>
+				</Strings>
+			</Button>
 		</Buttons>
 	</Commands>
 
@@ -325,6 +335,7 @@
 			<IDSymbol name="ClearAll" value="0x0129" />
 			<IDSymbol name="GotoFirst" value="0x0130" />
 			<IDSymbol name="GotoLast" value="0x0131" />
+			<IDSymbol name="SaveSession" value="0x0132" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>

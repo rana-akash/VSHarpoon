@@ -8,6 +8,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[0]);
+            Helper.UpdateLabel(0, HarpoonPackage.fileNamesArr[0]);
         }
     }
     [Command(PackageIds.SwitchToTab1)]
@@ -16,7 +17,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[1]);
-
+            Helper.UpdateLabel(1, HarpoonPackage.fileNamesArr[1]);
         }
     }
     [Command(PackageIds.SwitchToTab2)]
@@ -25,7 +26,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[2]);
-
+            Helper.UpdateLabel(2, HarpoonPackage.fileNamesArr[2]);
         }
     }
     [Command(PackageIds.SwitchToTab3)]
@@ -34,7 +35,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[3]);
-
+            Helper.UpdateLabel(3, HarpoonPackage.fileNamesArr[3]);
         }
     }
     [Command(PackageIds.SwitchToTab4)]
@@ -43,7 +44,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[4]);
-
+            Helper.UpdateLabel(4, HarpoonPackage.fileNamesArr[4]);
         }
     }
     [Command(PackageIds.SwitchToTab5)]
@@ -52,7 +53,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[5]);
-
+            Helper.UpdateLabel(5, HarpoonPackage.fileNamesArr[5]);
         }
     }
     [Command(PackageIds.SwitchToTab6)]
@@ -61,7 +62,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[6]);
-
+            Helper.UpdateLabel(6, HarpoonPackage.fileNamesArr[6]);
         }
     }
     [Command(PackageIds.SwitchToTab7)]
@@ -70,7 +71,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[7]);
-
+            Helper.UpdateLabel(7, HarpoonPackage.fileNamesArr[7]);
         }
     }
     [Command(PackageIds.SwitchToTab8)]
@@ -79,7 +80,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[8]);
-
+            Helper.UpdateLabel(8, HarpoonPackage.fileNamesArr[8]);
         }
     }
     [Command(PackageIds.SwitchToTab9)]
@@ -88,7 +89,7 @@ namespace Test1
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[9]);
-
+            Helper.UpdateLabel(9, HarpoonPackage.fileNamesArr[9]);
         }
     }
 }
