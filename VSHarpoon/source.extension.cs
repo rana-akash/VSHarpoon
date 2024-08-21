@@ -7,12 +7,12 @@ namespace Test1
 {
     internal sealed partial class Vsix
     {
-        public const string Id = "Test1.e71cd369-f408-4e31-99c5-426eac6eff92";
+        public const string Id = "Test1.e71cd369-f408-4e31-99c5-426eac6eff93";
         public const string Name = "VSHarpoon";
         public const string Description = @"Harpoon extension for Visual studio for Blazing Fast file navigation, inspired by ThePrimeagen";
         public const string Language = "en-US";
-        public const string Version = "1.0";
-        public const string Author = "Akash Rana";
+        public const string Version = "1.1";
+        public const string Author = "Akash Rana 3333";
         public const string Tags = "";
     }
 }
