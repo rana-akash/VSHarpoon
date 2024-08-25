@@ -51,6 +51,7 @@
     <Compile Include="Commands\HarpoonSession.cs" />
     <Compile Include="Commands\SaveSession.cs" />
     <Compile Include="Commands\ScoochIndexes.cs" />
+    <Compile Include="Commands\SessionHelper.cs" />
     <Compile Include="Commands\SwapLeftRight.cs" />
     <Compile Include="Commands\HarpoonWindowCommand.cs" />
     <Compile Include="Commands\NextPrevTab.cs" />

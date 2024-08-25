@@ -22,7 +22,9 @@ namespace Test1
             Helper.Label8 = lblHeadline8;
             Helper.Label9 = lblHeadline9;
             Helper.Activity = loglbl;
-            Helper.SetLabelInitValue();
+            Helper.NewSessionName = NewSessionName;
+            Helper.DropDownSessionList = DropDownSessionList;
+            Helper.SetInitValues();
             Helper.ReloadLabels();
             VS.Events.ProjectItemsEvents.AfterRenameProjectItems += HandleRenameOfDocuments;
             VS.Events.ProjectItemsEvents.AfterRemoveProjectItems += HandleRemoveOfDocuments;
@@ -84,64 +86,124 @@ namespace Test1
         private async void lblHeadline0_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[0] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[0]);
-            Helper.UpdateLabel(0, HarpoonPackage.fileNamesArr[0]);
+                Helper.UpdateLabel(0, HarpoonPackage.fileNamesArr[0]);
 
+            }
         }
         private async void lblHeadline1_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[1] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[1]); Helper.UpdateLabel(1, HarpoonPackage.fileNamesArr[1]);
+            }
         }
 
         private async void lblHeadline2_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[2] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[2]); Helper.UpdateLabel(2, HarpoonPackage.fileNamesArr[2]);
 
+            }
         }
         private async void lblHeadline3_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[3] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[3]); Helper.UpdateLabel(3, HarpoonPackage.fileNamesArr[3]);
 
+            }
         }
         private async void lblHeadline4_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[4] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[4]); Helper.UpdateLabel(4, HarpoonPackage.fileNamesArr[4]);
 
+            }
         }
         private async void lblHeadline5_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[5] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[5]); Helper.UpdateLabel(5, HarpoonPackage.fileNamesArr[5]);
 
+            }
         }
         private async void lblHeadline6_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[6] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[6]); Helper.UpdateLabel(6, HarpoonPackage.fileNamesArr[6]);
 
+            }
         }
         private async void lblHeadline7_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[7] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[7]); Helper.UpdateLabel(7, HarpoonPackage.fileNamesArr[7]);
 
+            }
         }
         private async void lblHeadline8_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[8] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[8]); Helper.UpdateLabel(8, HarpoonPackage.fileNamesArr[8]);
 
+            }
         }
         private async void lblHeadline9_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (HarpoonPackage.fileNamesArr[9] != null)
+            {
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[9]); Helper.UpdateLabel(9, HarpoonPackage.fileNamesArr[9]);
+
+            }
+        }
+
+        private void SaveCurrentSessionButton_Click(object sender, RoutedEventArgs e)
+        {
+            SessionHelper.SaveCurrentSession();
+        }
+
+        private void SaveAllSessionsButton_Click(object sender, RoutedEventArgs e)
+        {
+            SessionHelper.SaveAllSessions();
+        }
+
+        private void AddSessionButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(Helper.NewSessionName.Text))
+            {
+                return;
+            }
+
+            HarpoonPackage.activeSessionName = Helper.NewSessionName.Text;
+            SessionHelper.SaveCurrentSession();
+            Helper.SetDropDownValues();
+        }
+        private void RemoveButton_Click(object sender, RoutedEventArgs e)
+        {
 
         }
 
+        //private void DropDownSessionList_Selected(object sender, EventArgs e)
+        //{
+        //    string selectedValue = "";
+        //    SessionHelper.ChangeToSession(selectedValue);
+        //}
+
+        private void DropDownSessionList_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            var selectedValue = ((ComboBox)e.Source).SelectedValue;
+            if (selectedValue == null) {
+                return;
+            }
+            SessionHelper.ChangeToSession(selectedValue.ToString());
+        }
     }
 }

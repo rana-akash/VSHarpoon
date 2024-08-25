@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.IO;
+using Newtonsoft.Json.Bson;
 
 namespace Test1
 {
@@ -23,8 +24,10 @@ namespace Test1
         public static Label Label8 { get; set; }
         public static Label Label9 { get; set; }
         public static Label Activity { get; set; }
+        public static TextBox NewSessionName { get; set; }
+        public static ComboBox DropDownSessionList { get; set; }
 
-        public static void SetLabelInitValue()
+        public static void SetInitValues()
         {
             Label0.Content = "0  :  ";
             Label1.Content = "1  :  ";
@@ -37,6 +40,21 @@ namespace Test1
             Label8.Content = "8  :  ";
             Label9.Content = "9  :  ";
             Activity.Content = "Logs  :  ";
+            SetDropDownValues();
+        }
+
+        private static void SetDropDownText()
+        {
+            DropDownSessionList.Text = HarpoonPackage.activeSessionName;
+        }
+        public static void SetDropDownValues()
+        {
+            DropDownSessionList.Items.Clear();
+            foreach (var item in HarpoonPackage.sessions.KeyValuePairs)
+            {
+                DropDownSessionList.Items.Add(item.Key);
+            }
+            SetDropDownText();
         }
 
         public static void SetActivityLog(string msg)
@@ -108,7 +126,7 @@ namespace Test1
                 UpdateLabel(index, null);
                 HarpoonPackage.fileNameIndexMap.Remove(oldFileName);
                 // remove new's old ref
-                if(newFilePathOldIndex != -1)
+                if (newFilePathOldIndex != -1)
                 {
                     HarpoonPackage.fileNamesArr[newFilePathOldIndex] = null;
                     UpdateLabel(newFilePathOldIndex, null);
@@ -124,7 +142,7 @@ namespace Test1
 
         public static DirectoryInfo TryGetSolutionDirectoryInfo(string currentPath = null)
         {
-            var directory = new DirectoryInfo( currentPath ?? Directory.GetCurrentDirectory());
+            var directory = new DirectoryInfo(currentPath ?? Directory.GetCurrentDirectory());
             while (directory != null && !directory.GetFiles("*.sln").Any())
             {
                 directory = directory.Parent;
@@ -210,12 +228,8 @@ namespace Test1
                         Label9.FontWeight = FontWeights.Bold;
                     break;
                 default: break;
-
-
             }
 
         }
-
-        
     }
 }

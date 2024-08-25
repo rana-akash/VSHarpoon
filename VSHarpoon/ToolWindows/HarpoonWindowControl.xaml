@@ -31,11 +31,37 @@
             <RowDefinition Height="74*"/>
             <RowDefinition Height="74*"/>
             <RowDefinition Height="74*"/>
-            <RowDefinition Height="74*"/>
         </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="74*"/>
+            </Grid.RowDefinitions>
+
+            <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                BorderBrush="White" BorderThickness=".2" Grid.Row="1" Grid.Column="2">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch" >
+                    <Button ToolTip="Save" Name="SaveCurrentSessionButton" Content="Save" Click="SaveCurrentSessionButton_Click" />
+                </StackPanel>
+            </Border>
+            <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                BorderBrush="White" BorderThickness=".2" Grid.Row="1" Grid.Column="3">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch" >
+                    <Button ToolTip="SaveAll" Name="SaveAllSessionsButton" Content="SaveAll" Click="SaveAllSessionsButton_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
@@ -46,24 +72,28 @@
             <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                 BorderBrush="White" BorderThickness=".2"  Grid.Row="1" Grid.Column="0">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch">
-                    <ComboBox Grid.Column="1" >
-                        <ComboBoxItem Content="Coffie"></ComboBoxItem>
-                        <ComboBoxItem Content="Tea"></ComboBoxItem>
-                    </ComboBox>
+                    <ComboBox x:Name="DropDownSessionList" SelectionChanged ="DropDownSessionList_SelectionChanged"/>
                 </StackPanel>
             </Border>
             
             <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                 BorderBrush="White" BorderThickness=".2"  Grid.Row="1" Grid.Column="1">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch">
-                    <TextBox Grid.Column="2" Name="TextBox1" Text="SessionName"/>
+                    <TextBox x:Name="NewSessionName"/>
                 </StackPanel>
             </Border>
             
             <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                 BorderBrush="White" BorderThickness=".2"  Grid.Row="1" Grid.Column="2">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch">
-                    <Button Name="AddButton" Content="Add" />
+                    <Button ToolTip="Add" Name="AddButton" Content="Add" Click="AddSessionButton_Click"/>
+                </StackPanel>
+            </Border>
+
+            <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                BorderBrush="White" BorderThickness=".2"  Grid.Row="1" Grid.Column="3">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                    <Button ToolTip="Remove" Name="RemoveButton" Content="Remove" Click="RemoveButton_Click"/>
                 </StackPanel>
             </Border>
         </Grid>
