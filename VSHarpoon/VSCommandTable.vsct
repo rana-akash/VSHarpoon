@@ -290,23 +290,33 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="SaveSession" priority="0x0132" type="Button">
+			<Button guid="Harpoon" id="SaveCurrentSession" priority="0x0132" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
 				<Strings>
-					<ButtonText>HarpoonSaveSession</ButtonText>
-					<LocCanonicalName>.Harpoon.SaveSession</LocCanonicalName>
+					<ButtonText>HarpoonSaveCurrentSession</ButtonText>
+					<LocCanonicalName>.Harpoon.SaveCurrentSession</LocCanonicalName>
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="ScoochIndexes" priority="0x0132" type="Button">
+			<Button guid="Harpoon" id="ScoochIndexes" priority="0x0133" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
 				<Strings>
 					<ButtonText>HarpoonScoochIndexes</ButtonText>
 					<LocCanonicalName>.Harpoon.ScoochIndexes</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="SaveAllSessions" priority="0x0134" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonSaveAllSessions</ButtonText>
+					<LocCanonicalName>.Harpoon.SaveAllSessions</LocCanonicalName>
 				</Strings>
 			</Button>
 		</Buttons>
@@ -345,8 +355,9 @@
 			<IDSymbol name="ClearAll" value="0x0129" />
 			<IDSymbol name="GotoFirst" value="0x0130" />
 			<IDSymbol name="GotoLast" value="0x0131" />
-			<IDSymbol name="SaveSession" value="0x0132" />
+			<IDSymbol name="SaveCurrentSession" value="0x0132" />
 			<IDSymbol name="ScoochIndexes" value="0x0133" />
+			<IDSymbol name="SaveAllSessions" value="0x0134" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>

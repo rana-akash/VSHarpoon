@@ -22,6 +22,7 @@ namespace Test1
         public static Label Label7 { get; set; }
         public static Label Label8 { get; set; }
         public static Label Label9 { get; set; }
+        public static Label Activity { get; set; }
 
         public static void SetLabelInitValue()
         {
@@ -35,6 +36,17 @@ namespace Test1
             Label7.Content = "7  :  ";
             Label8.Content = "8  :  ";
             Label9.Content = "9  :  ";
+            Activity.Content = "Logs  :  ";
+        }
+
+        public static void SetActivityLog(string msg)
+        {
+            Activity.Content = string.Empty;
+
+            if (!string.IsNullOrEmpty(msg))
+            {
+                Activity.Content = msg;
+            }
         }
 
         public static void ReloadLabels()
@@ -112,8 +124,7 @@ namespace Test1
 
         public static DirectoryInfo TryGetSolutionDirectoryInfo(string currentPath = null)
         {
-            var directory = new DirectoryInfo(
-                currentPath ?? Directory.GetCurrentDirectory());
+            var directory = new DirectoryInfo( currentPath ?? Directory.GetCurrentDirectory());
             while (directory != null && !directory.GetFiles("*.sln").Any())
             {
                 directory = directory.Parent;

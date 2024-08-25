@@ -2,9 +2,11 @@
 global using Microsoft.VisualStudio.Shell;
 global using System;
 global using Task = System.Threading.Tasks.Task;
+using Microsoft.VisualStudio.Shell.Interop;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 
@@ -19,26 +21,48 @@ namespace Test1
     {
         public static string[] fileNamesArr = new string[10];
         public static Dictionary<string, int> fileNameIndexMap = new();
-        public static string sessionPath = $"{Helper.TryGetSolutionDirectoryInfo()}\\.harpoon_session";
+        public static string sessionPath = $"{Helper.TryGetSolutionDirectoryInfo()}\\.harpoon_sessions";
+        public static string activeSessionName = "session1";
+        public static HarpoonSessions sessions = new();
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
-            LoadSession();
+            LoadSessions();
             await this.RegisterCommandsAsync();
             this.RegisterToolWindows();
         }
 
-        private void LoadSession()
+        private void LoadSessions()
         {
-            if (File.Exists(sessionPath))
+            try
             {
-                var sessionData = File.ReadAllText(sessionPath);
-                var obj = JsonConvert.DeserializeObject<HarpoonSession>(sessionData);
-
-                if (obj != null)
+                if (File.Exists(sessionPath))
                 {
-                    HarpoonPackage.fileNamesArr = obj.fileNamesArr;
-                    HarpoonPackage.fileNameIndexMap =  obj.fileNameIndexMap;
+                    string sessionData = File.ReadAllText(sessionPath);
+                    var harpoonSessions = JsonConvert.DeserializeObject<HarpoonSessions>(sessionData);
+
+                    if (harpoonSessions != null && harpoonSessions.KeyValuePairs != null && harpoonSessions.KeyValuePairs.Count > 0)
+                    {
+                        HarpoonPackage.sessions = harpoonSessions;
+                        HarpoonPackage.activeSessionName = harpoonSessions.KeyValuePairs.First().Key;
+                        HarpoonPackage.fileNamesArr = harpoonSessions.KeyValuePairs[HarpoonPackage.activeSessionName].fileNamesArr;
+                        HarpoonPackage.fileNameIndexMap = harpoonSessions.KeyValuePairs[HarpoonPackage.activeSessionName].fileNameIndexMap;
+
+                        //Helper.SetActivityLog($"Active session is set to {HarpoonPackage.activeSessionName}");
+                    }
+                    else
+                    {
+                        //Helper.SetActivityLog($"No Harpoon sessions file found");
+                    }
                 }
+                else
+                {
+                    //Helper.SetActivityLog($"No Harpoon sessions file found");
+                }
+            }
+            catch (Exception ex)
+            {
+                Helper.SetActivityLog(ex.Message);
+
             }
         }
     }

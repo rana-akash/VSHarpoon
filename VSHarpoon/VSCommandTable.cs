@@ -51,10 +51,8 @@ namespace Test1
         public const int ClearAll = 0x0129;
         public const int GotoFirst = 0x0130;
         public const int GotoLast = 0x0131;
-        public const int SaveSession = 0x0132;
+        public const int SaveCurrentSession = 0x0132;
         public const int ScoochIndexes = 0x0133;
-
-        
-
+        public const int SaveAllSessions = 0x0134;
     }
 }

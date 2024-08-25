@@ -59,5 +59,10 @@ Height="24" Width="290" RenderTransformOrigin="0.504,0.456"/>
 Height="24" Width="293"/>
         </StackPanel>
 
+        <StackPanel Orientation="Horizontal" Margin="0,261,0,19">
+            <Label x:Name="loglbl"
+Height="24" Width="293"/>
+        </StackPanel>
+
     </Grid>
 </UserControl>

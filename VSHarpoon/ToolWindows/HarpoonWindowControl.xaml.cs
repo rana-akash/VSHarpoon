@@ -21,6 +21,7 @@ namespace Test1
             Helper.Label7 = lblHeadline7;
             Helper.Label8 = lblHeadline8;
             Helper.Label9 = lblHeadline9;
+            Helper.Activity = loglbl;
             Helper.SetLabelInitValue();
             Helper.ReloadLabels();
             VS.Events.ProjectItemsEvents.AfterRenameProjectItems += HandleRenameOfDocuments;
@@ -45,15 +46,6 @@ namespace Test1
                 Helper.clearBoldOffLabels();
             }
         }
-
-        //private void HandleBeforeDocumentWindowShow(string obj)
-        //{
-        //    if (obj != null && HarpoonPackage.fileNameIndexMap.ContainsKey(obj))
-        //    {
-        //        Helper.UpdateLabel(HarpoonPackage.fileNameIndexMap[obj], obj);
-        //    }
-        //    Debug.WriteLine(obj);
-        //}
 
         public void HandleRemoveOfDocuments(AfterRemoveProjectItemEventArgs args)
         {
