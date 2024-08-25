@@ -53,7 +53,7 @@ public sealed class SaveAllSessions : BaseCommand<SaveAllSessions>
             HarpoonPackage.sessions.KeyValuePairs[HarpoonPackage.activeSessionName] = new HarpoonSession() { fileNamesArr = HarpoonPackage.fileNamesArr, fileNameIndexMap = HarpoonPackage.fileNameIndexMap };
 
             File.WriteAllText(HarpoonPackage.sessionPath, JsonConvert.SerializeObject(HarpoonPackage.sessions));
-            Helper.SetActivityLog($"Saved all sessions at {HarpoonPackage.sessionPath}");
+            Helper.SetActivityLog($"Saved all sessions at {Path.GetFullPath( HarpoonPackage.sessionPath)}");
 
         }
         catch (Exception ex)
