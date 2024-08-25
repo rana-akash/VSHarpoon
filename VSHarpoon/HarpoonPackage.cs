@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
+using static Microsoft.VisualStudio.Shell.ThreadedWaitDialogHelper;
 
 namespace Test1
 {
@@ -56,6 +57,7 @@ namespace Test1
                 }
                 else
                 {
+                    HarpoonPackage.sessions.KeyValuePairs.Add(HarpoonPackage.activeSessionName, new HarpoonSession() { fileNameIndexMap = HarpoonPackage.fileNameIndexMap, fileNamesArr = HarpoonPackage.fileNamesArr });
                     File.WriteAllText(HarpoonPackage.sessionPath, JsonConvert.SerializeObject(HarpoonPackage.sessions));
                     //Helper.SetActivityLog($"No Harpoon sessions file found");
                 }
