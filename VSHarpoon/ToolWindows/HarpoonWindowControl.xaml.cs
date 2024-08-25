@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using Microsoft.VisualStudio.Imaging;
+using System.Diagnostics;
+using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Windows;
 using System.Windows.Controls;
@@ -181,21 +183,13 @@ namespace Test1
             {
                 return;
             }
-
-            HarpoonPackage.activeSessionName = Helper.NewSessionName.Text;
-            SessionHelper.SaveCurrentSession();
-            Helper.SetDropDownValues();
+            
+            SessionHelper.AddSession(Helper.NewSessionName.Text);
         }
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
-
+            SessionHelper.RemoveSession(HarpoonPackage.activeSessionName);
         }
-
-        //private void DropDownSessionList_Selected(object sender, EventArgs e)
-        //{
-        //    string selectedValue = "";
-        //    SessionHelper.ChangeToSession(selectedValue);
-        //}
 
         private void DropDownSessionList_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {

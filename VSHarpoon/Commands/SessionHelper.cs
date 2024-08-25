@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
+using System.Linq;
 
 namespace Test1;
 
@@ -68,11 +69,53 @@ public static class SessionHelper
             return;
         }
 
-
         HarpoonPackage.activeSessionName = sessionName;
         HarpoonPackage.fileNamesArr = HarpoonPackage.sessions.KeyValuePairs[sessionName].fileNamesArr;
         HarpoonPackage.fileNameIndexMap = HarpoonPackage.sessions.KeyValuePairs[sessionName].fileNameIndexMap;
 
+        Helper.ReloadLabels();
+        Helper.SetDropDownValues();
+    }
+
+    public static void RemoveSession(string sessionName)
+    {
+        if (string.IsNullOrEmpty(sessionName))
+        {
+            return;
+        }
+
+        if(sessionName == "default")
+        {
+            return;
+        }
+
+        HarpoonPackage.sessions.KeyValuePairs.Remove(sessionName);
+       
+        HarpoonPackage.activeSessionName = HarpoonPackage.sessions.KeyValuePairs.First().Key;
+        HarpoonPackage.fileNamesArr = HarpoonPackage.sessions.KeyValuePairs[HarpoonPackage.activeSessionName].fileNamesArr;
+        HarpoonPackage.fileNameIndexMap = HarpoonPackage.sessions.KeyValuePairs[HarpoonPackage.activeSessionName].fileNameIndexMap;
+        Helper.ReloadLabels();
+        Helper.SetDropDownValues();
+    }
+
+    public static void AddSession(string newSessionName)
+    {
+        if (string.IsNullOrEmpty(newSessionName))
+        {
+            throw new ArgumentException(nameof(newSessionName));
+        }
+
+        if (HarpoonPackage.sessions.KeyValuePairs.ContainsKey(Helper.NewSessionName.Text))
+        {
+            return;
+        }
+
+        HarpoonPackage.sessions.KeyValuePairs.Add(newSessionName, new HarpoonSession() { fileNameIndexMap = new(), fileNamesArr = new string[10] });
+        
+        HarpoonPackage.activeSessionName = Helper.NewSessionName.Text;
+        HarpoonPackage.fileNamesArr = HarpoonPackage.sessions.KeyValuePairs[HarpoonPackage.activeSessionName].fileNamesArr;
+        HarpoonPackage.fileNameIndexMap = HarpoonPackage.sessions.KeyValuePairs[HarpoonPackage.activeSessionName].fileNameIndexMap;
+        SessionHelper.SaveCurrentSession();
         Helper.ReloadLabels();
         Helper.SetDropDownValues();
     }
