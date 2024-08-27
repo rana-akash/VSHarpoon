@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.IO;
 using Newtonsoft.Json.Bson;
+using EnvDTE;
 
 namespace Test1
 {
@@ -140,14 +141,35 @@ namespace Test1
             }
         }
 
-        public static DirectoryInfo TryGetSolutionDirectoryInfo(string currentPath = null)
+        public static string TryGetSolutionDirectoryInfo()
         {
-            var directory = new DirectoryInfo(currentPath ?? Directory.GetCurrentDirectory());
-            while (directory != null && !directory.GetFiles("*.sln").Any())
-            {
-                directory = directory.Parent;
-            }
-            return directory;
+            DirectoryInfo directory = null;
+
+            directory = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
+
+            //try
+            //{
+            //    //var a = VS.Solutions.GetCurrentSolution().FullPath;
+            //    //if (a == null)
+            //    //{
+            //    //    throw new Exception("No Solution directory found");
+            //    //}
+            //}
+            //catch (Exception e)
+            //{
+            //    directory = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
+            //    if(directory == null)
+            //    {
+            //        throw new Exception("No userprofile folder found.");
+            //    }
+            //}
+
+            return directory.FullName;
+        }
+
+        public static void Log(string message)
+        {
+            File.AppendAllText("C:\\Users\\user01\\source\\repos\\a.txt", message+"\n");
         }
 
         public static void clearBoldOffLabels()

@@ -22,7 +22,7 @@ namespace Test1
     {
         public static string[] fileNamesArr = new string[10];
         public static Dictionary<string, int> fileNameIndexMap = new();
-        public static string sessionPath = $"{Helper.TryGetSolutionDirectoryInfo().FullName}\\.harpoon_sessions";
+        public static string sessionPath = $"{Helper.TryGetSolutionDirectoryInfo()}\\.harpoon_sessions";
         public static string activeSessionName = "default";
         public static HarpoonSessions sessions = new();
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)

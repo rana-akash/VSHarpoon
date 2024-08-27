@@ -31,8 +31,71 @@ namespace Test1
             VS.Events.ProjectItemsEvents.AfterRenameProjectItems += HandleRenameOfDocuments;
             VS.Events.ProjectItemsEvents.AfterRemoveProjectItems += HandleRemoveOfDocuments;
             VS.Events.WindowEvents.ActiveFrameChanged += HandleActiveFrameChanged;
+
+
+
+            //VS.Events.SolutionEvents.OnAfterOpenFolder += HandleFolderOpenEvent();
+            //VS.Events.SolutionEvents.OnAfterOpenSolution += HandleOpenSolutionEvent();
+            //VS.Events.SolutionEvents.OnAfterBackgroundSolutionLoadComplete += HandleOnAfterBackgroundSolutionLoadComplete();
+
+
+            //VS.Events.SolutionEvents.OnBeforeOpenSolution += HandleObBeforeOpenSolutionEvent();
+            //VS.Events.ShellEvents.ShellAvailable += HandleShellAvailableEvent();
+
+            //VS.Events.ShellEvents.MainWindowVisibilityChanged += HandleEvent1();
+
+            //VS.Events.SolutionEvents.OnAfterLoadProject += HandleEvent2();
         }
 
+        //private Action<Project> HandleEvent2()
+        //{
+        //    ////var a = VS.Solutions.GetCurrentSolution();
+        //    Helper.Log($"handleEvent2 {VS.Solutions.GetCurrentSolution()}");
+        //    return null;
+        //}
+
+        //private Action<bool> HandleEvent1()
+        //{
+        //    //var a = VS.Solutions.GetCurrentSolution();
+        //    Helper.Log($"handleEvent1 {VS.Solutions.GetCurrentSolution()}");
+        //    return null;
+        //}
+
+        //private Action HandleShellAvailableEvent()
+        //{
+        //    //var a = VS.Solutions.GetCurrentSolution();
+        //    Helper.Log($"HandleShellAvailableEvent {VS.Solutions.GetCurrentSolution()}");
+        //    return null;
+        //}
+
+        //private Action<string> HandleObBeforeOpenSolutionEvent()
+        //{
+        //    //var a = VS.Solutions.GetCurrentSolution();
+        //    Helper.Log($"HandleObBeforeOpenSolutionEvent {VS.Solutions.GetCurrentSolution()}");
+        //    return null;
+        //}
+
+        //private Action HandleOnAfterBackgroundSolutionLoadComplete()
+        //{
+        //    //var a = VS.Solutions.GetCurrentSolution();
+        //    Helper.Log($"HandleOnAfterBackgroundSolutionLoadComplete {VS.Solutions.GetCurrentSolution()}");
+        //    return null;
+        //}
+
+        //private Action<Solution> HandleOpenSolutionEvent()
+        //{
+        //    //var a = VS.Solutions.GetCurrentSolution();
+        //    Helper.Log($"HandleOpenSolutionEvent {VS.Solutions.GetCurrentSolution()}"); 
+        //    return null;
+        //}
+       
+        //private Action<string> HandleFolderOpenEvent()
+        //{
+        //    //var a = VS.Solutions.GetCurrentSolution();
+        //    Helper.Log($"HandleFolderOpenEvent {VS.Solutions.GetCurrentSolution()}"); 
+        //    return null;
+        //}
+       
         private void HandleActiveFrameChanged(ActiveFrameChangeEventArgs args)
         {
             bool matched = false;

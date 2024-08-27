@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Test1.e71cd369-f408-4e31-99c5-426eac6eff93" Version="1.3" Language="en-US" Publisher="Akash Rana 33333" />
+        <Identity Id="Test1.e71cd369-f408-4e31-99c5-426eac6eff93" Version="1.5" Language="en-US" Publisher="Akash Rana 33333" />
         <DisplayName>VSHarpoon</DisplayName>
         <Description xml:space="preserve">Harpoon extension for Visual studio for Blazing Fast file navigation, inspired by ThePrimeagen</Description>
         <Icon>Resources\Icon.png</Icon>
