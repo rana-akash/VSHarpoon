@@ -319,6 +319,27 @@
 					<LocCanonicalName>.Harpoon.SaveAllSessions</LocCanonicalName>
 				</Strings>
 			</Button>
+
+			<Button guid="Harpoon" id="ScrollHalfPageDown" priority="0x0135" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonScrollHalfPageDown</ButtonText>
+					<LocCanonicalName>.Harpoon.ScrollHalfPageDown</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="ScrollHalfPageUp" priority="0x0136" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonScrollHalfPageUp</ButtonText>
+					<LocCanonicalName>.Harpoon.ScrollHalfPageUp</LocCanonicalName>
+				</Strings>
+			</Button>
+			
 		</Buttons>
 	</Commands>
 
@@ -358,6 +379,8 @@
 			<IDSymbol name="SaveCurrentSession" value="0x0132" />
 			<IDSymbol name="ScoochIndexes" value="0x0133" />
 			<IDSymbol name="SaveAllSessions" value="0x0134" />
+			<IDSymbol name="ScrollHalfPageDown" value="0x0135" />
+			<IDSymbol name="ScrollHalfPageUp" value="0x0136" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>
