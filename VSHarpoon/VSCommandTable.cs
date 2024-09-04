@@ -56,5 +56,6 @@ namespace Test1
         public const int SaveAllSessions = 0x0134;
         public const int ScrollHalfPageDown = 0x0135;
         public const int ScrollHalfPageUp = 0x0136;
+        public const int ShowTabOnSlnTree = 0x0137;
     }
 }

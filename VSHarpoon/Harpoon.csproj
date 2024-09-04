@@ -51,6 +51,8 @@
     <Compile Include="Commands\HarpoonSession.cs" />
     <Compile Include="Commands\SaveSession.cs" />
     <Compile Include="Commands\ScoochIndexes.cs" />
+    <Compile Include="Commands\ScrollHalfPageDown.cs" />
+    <Compile Include="Commands\ScrollHalfPageUp.cs" />
     <Compile Include="Commands\SessionHelper.cs" />
     <Compile Include="Commands\SwapLeftRight.cs" />
     <Compile Include="Commands\HarpoonWindowCommand.cs" />

@@ -339,6 +339,16 @@
 					<LocCanonicalName>.Harpoon.ScrollHalfPageUp</LocCanonicalName>
 				</Strings>
 			</Button>
+
+			<Button guid="Harpoon" id="ShowTabOnSlnTree" priority="0x0137" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>HarpoonShowTabOnSlnTree</ButtonText>
+					<LocCanonicalName>.Harpoon.ShowTabOnSlnTree</LocCanonicalName>
+				</Strings>
+			</Button>
 			
 		</Buttons>
 	</Commands>
@@ -381,6 +391,8 @@
 			<IDSymbol name="SaveAllSessions" value="0x0134" />
 			<IDSymbol name="ScrollHalfPageDown" value="0x0135" />
 			<IDSymbol name="ScrollHalfPageUp" value="0x0136" />
+			<IDSymbol name="ShowTabOnSlnTree" value="0x0137" />
+			
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>

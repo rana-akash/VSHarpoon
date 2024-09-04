@@ -149,7 +149,7 @@ namespace Test1
 
             //try
             //{
-            //    //var a = VS.Solutions.GetCurrentSolution().FullPath;
+            //    //var a = VS.Solutions.GetCurrentSolution().FullPath; // gets executed before the solution is loaded, hence null;
             //    //if (a == null)
             //    //{
             //    //    throw new Exception("No Solution directory found");
