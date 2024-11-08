@@ -6,7 +6,7 @@
 namespace Test1
 {
     using System;
-    
+
     /// <summary>
     /// Helper class that exposes all GUIDs used across VS Package.
     /// </summary>
@@ -56,6 +56,14 @@ namespace Test1
         public const int SaveAllSessions = 0x0134;
         public const int ScrollHalfPageDown = 0x0135;
         public const int ScrollHalfPageUp = 0x0136;
-        public const int ShowTabOnSlnTree = 0x0137;
+        //public const int ShowTabOnSlnTree = 0x0137;
+        public const int SetupVerticalWorkspace = 0x0139;
+
+        public const int CommandIdJumpLeft = 0x0200;
+        public const int CommandIdJumpRight = 0x0201;
+        public const int CommandIdJumpUp = 0x0202;
+        public const int CommandIdJumpDown = 0x0203;
+        public const int CommandIdJumpPrevious = 0x0204;
+        public const int CommandIdJumpNext = 0x0205;
     }
 }

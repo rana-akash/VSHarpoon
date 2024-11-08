@@ -8,13 +8,13 @@
 
 	<Commands package="Harpoon">
 		<Groups>
-			<Group guid="Harpoon" id="MyMenuGroup" priority="0x0600">
+			<Group guid="Harpoon" id="MyMenuGroup" priority="0x0000">
 				<Parent guid="VSMainMenu" id="Tools"/>
 			</Group>
 		</Groups>
 
 		<Buttons>
-			<Button guid="Harpoon" id="AppendTab" priority="0x0100" type="Button">
+			<Button guid="Harpoon" id="AppendTab" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -23,7 +23,7 @@
 					<LocCanonicalName>.Harpoon.AppendTab</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="DeleteTab" priority="0x0101" type="Button">
+			<Button guid="Harpoon" id="DeleteTab" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -32,7 +32,7 @@
 					<LocCanonicalName>.Harpoon.DeleteTab</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab0" priority="0x0102" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab0" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -41,7 +41,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab0</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab1" priority="0x0105" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab1" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -50,7 +50,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab1</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab2" priority="0x0106" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab2" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -59,7 +59,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab2</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab3" priority="0x0107" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab3" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -68,7 +68,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab3</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab4" priority="0x0108" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab4" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -77,7 +77,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab4</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab5" priority="0x0109" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab5" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -86,7 +86,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab5</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab6" priority="0x0110" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab6" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -95,7 +95,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab6</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab7" priority="0x0111" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab7" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -104,7 +104,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab7</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab8" priority="0x0112" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab8" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -113,7 +113,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab8</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="OverwriteTab9" priority="0x0113" type="Button">
+			<Button guid="Harpoon" id="OverwriteTab9" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -122,7 +122,7 @@
 					<LocCanonicalName>.Harpoon.OverwriteTab9</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="NextTab" priority="0x0114" type="Button">
+			<Button guid="Harpoon" id="NextTab" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -131,7 +131,7 @@
 					<LocCanonicalName>.Harpoon.NextTab</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="PrevTab" priority="0x0115" type="Button">
+			<Button guid="Harpoon" id="PrevTab" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -141,7 +141,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="SwitchToTab0" priority="0x0116" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab0" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -150,7 +150,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab0</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab1" priority="0x0117" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab1" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -159,7 +159,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab1</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab2" priority="0x0118" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab2" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -168,7 +168,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab2</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab3" priority="0x0119" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab3" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -177,7 +177,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab3</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab4" priority="0x0120" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab4" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -186,7 +186,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab4</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab5" priority="0x0121" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab5" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -195,7 +195,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab5</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab6" priority="0x0122" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab6" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -204,7 +204,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab6</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab7" priority="0x0123" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab7" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -213,7 +213,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab7</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab8" priority="0x0124" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab8" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -222,7 +222,7 @@
 					<LocCanonicalName>.Harpoon.SwitchToTab8</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="SwitchToTab9" priority="0x0125" type="Button">
+			<Button guid="Harpoon" id="SwitchToTab9" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -232,7 +232,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="HarpoonToolWindow" priority="0x0125" type="Button">
+			<Button guid="Harpoon" id="HarpoonToolWindow" priority="0x0000" type="Button">
 				<Parent guid="VSMainMenu" id="View.DevWindowsGroup.OtherWindows.Group1" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -242,7 +242,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="SwapLeft" priority="0x0127" type="Button">
+			<Button guid="Harpoon" id="SwapLeft" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -252,7 +252,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="SwapRight" priority="0x0128" type="Button">
+			<Button guid="Harpoon" id="SwapRight" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -262,7 +262,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="ClearAll" priority="0x0129" type="Button">
+			<Button guid="Harpoon" id="ClearAll" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -271,7 +271,7 @@
 					<LocCanonicalName>.Harpoon.ClearAll</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="GotoFirst" priority="0x0130" type="Button">
+			<Button guid="Harpoon" id="GotoFirst" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -280,7 +280,7 @@
 					<LocCanonicalName>.Harpoon.GotoFirst</LocCanonicalName>
 				</Strings>
 			</Button>
-			<Button guid="Harpoon" id="GotoLast" priority="0x0131" type="Button">
+			<Button guid="Harpoon" id="GotoLast" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -290,7 +290,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="SaveCurrentSession" priority="0x0132" type="Button">
+			<Button guid="Harpoon" id="SaveCurrentSession" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -300,7 +300,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="ScoochIndexes" priority="0x0133" type="Button">
+			<Button guid="Harpoon" id="ScoochIndexes" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -310,7 +310,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="SaveAllSessions" priority="0x0134" type="Button">
+			<Button guid="Harpoon" id="SaveAllSessions" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -320,7 +320,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="ScrollHalfPageDown" priority="0x0135" type="Button">
+			<Button guid="Harpoon" id="ScrollHalfPageDown" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -330,7 +330,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="ScrollHalfPageUp" priority="0x0136" type="Button">
+			<Button guid="Harpoon" id="ScrollHalfPageUp" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -340,7 +340,7 @@
 				</Strings>
 			</Button>
 
-			<Button guid="Harpoon" id="ShowTabOnSlnTree" priority="0x0137" type="Button">
+			<!--<Button guid="Harpoon" id="ShowTabOnSlnTree" priority="0x0000" type="Button">
 				<Parent guid="Harpoon" id="MyMenuGroup" />
 				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
@@ -348,8 +348,71 @@
 					<ButtonText>HarpoonShowTabOnSlnTree</ButtonText>
 					<LocCanonicalName>.Harpoon.ShowTabOnSlnTree</LocCanonicalName>
 				</Strings>
+			</Button>-->
+
+			<Button guid="Harpoon" id="SetupVerticalWorkspace" priority="0x0000" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>SetupVerticalWorkspace</ButtonText>
+					<LocCanonicalName>.Harpoon.SetupVerticalWorkspace</LocCanonicalName>
+				</Strings>
 			</Button>
-			
+
+
+
+
+
+
+
+			<Button guid="Harpoon" id="CommandIdJumpLeft" priority="0x0000" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>Navigate Left</ButtonText>
+					<LocCanonicalName>.Harpoon.Left</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="CommandIdJumpRight" priority="0x0000" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>Navigate Right</ButtonText>
+					<LocCanonicalName>.Harpoon.Right</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="CommandIdJumpUp" priority="0x0000" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>Navigate Up</ButtonText>
+					<LocCanonicalName>.Harpoon.Up</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="CommandIdJumpDown" priority="0x0000" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>Navigate Down</ButtonText>
+					<LocCanonicalName>.Harpoon.Down</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="CommandIdJumpPrevious" priority="0x0000" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>Navigate Previous</ButtonText>
+					<LocCanonicalName>.Harpoon.Previous</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="Harpoon" id="CommandIdJumpNext" priority="0x0000" type="Button">
+				<Parent guid="Harpoon" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>Navigate Next</ButtonText>
+					<LocCanonicalName>.Harpoon.Next</LocCanonicalName>
+				</Strings>
+			</Button>
 		</Buttons>
 	</Commands>
 
@@ -391,8 +454,15 @@
 			<IDSymbol name="SaveAllSessions" value="0x0134" />
 			<IDSymbol name="ScrollHalfPageDown" value="0x0135" />
 			<IDSymbol name="ScrollHalfPageUp" value="0x0136" />
-			<IDSymbol name="ShowTabOnSlnTree" value="0x0137" />
-			
+			<!--<IDSymbol name="ShowTabOnSlnTree" value="0x0137" />-->
+			<IDSymbol name="SetupVerticalWorkspace" value="0x0139" />
+
+			<IDSymbol name="CommandIdJumpLeft" value="0x0200"/>
+			<IDSymbol name="CommandIdJumpRight" value="0x0201"/>
+			<IDSymbol name="CommandIdJumpUp" value="0x0202"/>
+			<IDSymbol name="CommandIdJumpDown" value="0x0203"/>
+			<IDSymbol name="CommandIdJumpPrevious" value="0x0204"/>
+			<IDSymbol name="CommandIdJumpNext" value="0x0205"/>
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>

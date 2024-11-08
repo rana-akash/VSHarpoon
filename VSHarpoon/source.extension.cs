@@ -11,7 +11,7 @@ namespace Test1
         public const string Name = "VSHarpoon";
         public const string Description = @"Harpoon extension for Visual studio for Blazing Fast file navigation, inspired by ThePrimeagen";
         public const string Language = "en-US";
-        public const string Version = "1.5";
+        public const string Version = "1.6";
         public const string Author = "Akash Rana 3333";
         public const string Tags = "";
     }

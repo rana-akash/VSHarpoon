@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.Imaging;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Windows;
@@ -152,6 +153,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[0] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[0]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[0]);
                 Helper.UpdateLabel(0, HarpoonPackage.fileNamesArr[0]);
 
@@ -161,6 +166,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[1] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[1]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[1]); Helper.UpdateLabel(1, HarpoonPackage.fileNamesArr[1]);
             }
         }
@@ -169,6 +178,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[2] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[2]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[2]); Helper.UpdateLabel(2, HarpoonPackage.fileNamesArr[2]);
 
             }
@@ -177,6 +190,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[3] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[3]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[3]); Helper.UpdateLabel(3, HarpoonPackage.fileNamesArr[3]);
 
             }
@@ -185,6 +202,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[4] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[4]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[4]); Helper.UpdateLabel(4, HarpoonPackage.fileNamesArr[4]);
 
             }
@@ -193,6 +214,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[5] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[5]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[5]); Helper.UpdateLabel(5, HarpoonPackage.fileNamesArr[5]);
 
             }
@@ -201,6 +226,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[6] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[6]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[6]); Helper.UpdateLabel(6, HarpoonPackage.fileNamesArr[6]);
 
             }
@@ -209,6 +238,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[7] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[7]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[7]); Helper.UpdateLabel(7, HarpoonPackage.fileNamesArr[7]);
 
             }
@@ -217,6 +250,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[8] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[8]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[8]); Helper.UpdateLabel(8, HarpoonPackage.fileNamesArr[8]);
 
             }
@@ -225,6 +262,10 @@ namespace Test1
         {
             if (HarpoonPackage.fileNamesArr[9] != null)
             {
+                if (!File.Exists(HarpoonPackage.fileNamesArr[9]))
+                {
+                    return;
+                }
                 await VS.Documents.OpenAsync(HarpoonPackage.fileNamesArr[9]); Helper.UpdateLabel(9, HarpoonPackage.fileNamesArr[9]);
 
             }

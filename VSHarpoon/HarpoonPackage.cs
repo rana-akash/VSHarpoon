@@ -29,6 +29,8 @@ namespace Test1
         {
             LoadSessions();
             await this.RegisterCommandsAsync();
+            TabGroupJump.Initialize(this);
+            await base.InitializeAsync(cancellationToken, progress);
             this.RegisterToolWindows();
         }
 
