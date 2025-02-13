@@ -67,8 +67,10 @@ This extension provides below commands :
 
 **Harpoon.ScoochIndexes**  : Recovers empty indexes
 
-**Harpoon.HarpoonToolWindow**  : window showing index to tab assignment
+**View.HarpoonToolWindow** : window showing index to tab assignment
 
-There is a tool window which shows what tab is assigned to which index
-**Harpoon.HarpoonToolWindow** : window showing index to tab assignment
+See the full list of Command Ids by going to `Tools > Options > Environment > Keyboard > Search for 'Harpoon'`:
 
+![shortcuts](imgs/shortcuts.png)
+
+You can customize your own shortcuts there.
